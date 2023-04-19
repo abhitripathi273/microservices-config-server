@@ -12,7 +12,8 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
+ecommerce-config-server*
+ecommerce-config-server.*
 ### IntelliJ IDEA ###
 .idea
 *.iws

@@ -1,0 +1,26 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: attendance-config
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///c:/Users/abhtripa/Documents/attendance-project/config-files
+        git:
+          #clone-on-start: true
+          default-label: main
+          uri: https://github.com/abhitripathi273/ecommerce-external-config
+          #uri: file:///c:/Users/abhtripa/Documents/attendance-project/config-files
+          username: abhitripathi273
+          password: wxmH8meYVGdLUHh
+    
+# Logging pattern for file
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    level: INFO
+  file:
+    name: employee-config-server.log    
